@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Authors>Digishui LLC</Authors>
+    <Description>Kitchen sink of extensions and utility classes for .NET Core.</Description>
+    <Copyright>Copyright © 2011-2025</Copyright>
+    <Version>2.5</Version>
+    <AssemblyVersion>2.5</AssemblyVersion>
+    <FileVersion>2.5</FileVersion>
+
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/Digishui/Digishui</PackageProjectUrl>
+    <PackageIcon>digishui-logo.png</PackageIcon>
+    <PackageTags>Digishui</PackageTags>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageOutputPath>E:\Nuget</PackageOutputPath>
+    <RepositoryUrl>https://github.com/Digishui/Digishui</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="images\digishui-logo.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.12.1" />
+    <PackageReference Include="libphonenumber-csharp" Version="9.0.8" />
+    <PackageReference Include="SendGrid" Version="9.29.3" />
+  </ItemGroup>
+</Project>
