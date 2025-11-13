@@ -23,13 +23,13 @@ namespace Digishui.Test
     [TestMethod]
     public void DecodeOversizedBase32String()
     {
-      Assert.ThrowsException<ArgumentException>(() => Base32Guid.Decode(OversizedBase32String));
+      Assert.Throws<ArgumentException>(() => Base32Guid.Decode(OversizedBase32String));
     }
 
     [TestMethod]
     public void DecodeInvalidBase32GuidString()
     {
-      Assert.ThrowsException<FormatException>(() => Base32Guid.Decode(InvalidBase32GuidString));
+      Assert.Throws<FormatException>(() => Base32Guid.Decode(InvalidBase32GuidString));
     }
 
     [TestMethod]

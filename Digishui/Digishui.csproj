@@ -3,11 +3,11 @@
     <Authors>Digishui LLC</Authors>
     <Description>Kitchen sink of extensions and utility classes for .NET Core.</Description>
     <Copyright>Copyright © 2011-2025</Copyright>
-    <Version>2.5</Version>
-    <AssemblyVersion>2.5</AssemblyVersion>
-    <FileVersion>2.5</FileVersion>
+    <Version>2.7</Version>
+    <AssemblyVersion>2.7</AssemblyVersion>
+    <FileVersion>2.7</FileVersion>
 
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
 
@@ -34,8 +34,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="HtmlAgilityPack" Version="1.12.1" />
-    <PackageReference Include="libphonenumber-csharp" Version="9.0.8" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.12.4" />
+    <PackageReference Include="libphonenumber-csharp" Version="9.0.18" />
     <PackageReference Include="SendGrid" Version="9.29.3" />
   </ItemGroup>
 </Project>
