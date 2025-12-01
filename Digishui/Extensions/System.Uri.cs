@@ -31,7 +31,7 @@ namespace Digishui.Extensions
 
       if (requestHeaders.ContainsKey("User-Agent") == false)
       {
-        httpWebRequest.UserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:136.0) Gecko/20100101 Firefox/136.0";
+        httpWebRequest.UserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:145.0) Gecko/20100101 Firefox/145.0";
       }
       else
       {
@@ -43,6 +43,7 @@ namespace Digishui.Extensions
       if (requestHeaders.ContainsKey("Cache-Control") == false) { requestHeaders.Add("Cache-Control", "no-cache"); }
       if (requestHeaders.ContainsKey("Connection") == false) { requestHeaders.Add("Connection", "keep-alive"); }
       if (requestHeaders.ContainsKey("Accept") == false) { requestHeaders.Add("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); }
+      if (requestHeaders.ContainsKey("Accept-Language") == false) { requestHeaders.Add("Accept-Language", "en-US,en;q=0.5"); }
 
       foreach (KeyValuePair<string, string> header in requestHeaders)
       {
